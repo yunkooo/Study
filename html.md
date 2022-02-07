@@ -16,7 +16,6 @@ ul unordered list
 ol oderded list  
 a anchor 링크  
 
-
 속성(attribute)  
 source - src  
 href - HyperText Reference   
@@ -27,3 +26,12 @@ server 사업자
 http 웹페이지를 주고받기위한 통신규약인 http를 이용해서 통신하겠다는 뜻  
 127.0.0.1 Internet Protocol Address 주소   
 IP address는 0.0.0.0 ~ 255.255.255.255 존재
+
+
+2022/02/05
+
+iframe  
+내컴퓨터 = 127.0.0.1  
+댓글 서비스를 이용 - disqus  
+채팅기능 - tawk  
+웹페이지 분석기 analytics google
