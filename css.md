@@ -29,8 +29,12 @@ span inline 태그
 
 midea쿼리 반응형 디자인  
 ex)  
+
+<pre><code>
 @media(min-width:800px) {  
     div{  
         display:none;  
     }  
 }  
+</code></pre>
+캐싱 저장하다
