@@ -1,1 +1,3 @@
-alert("Hello, world!");
+if("0"){
+    alert('Hello');
+}
