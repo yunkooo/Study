@@ -52,7 +52,7 @@ key-value로 정보를 제공할때
 
 
 Form 
-```<form action="" method=""></form>```  
+```<form action="API 주소" method="GET/POST"></form>```  
 사용자로부터 인풋(input)을 받기 위한 태그  
 
 action="API주소"  
@@ -71,7 +71,14 @@ value="" 기본값
 type="number"일 때 min="숫자" 입력 최소값 max="숫자" 입력 최대값  
 type="file" 일 경우 파일 확장자 제한 accept=".png,.jpg"  
 
-```<label for="id">``` 폼 양식에 이름을 붙이는 태그
+```<label for="id">```  
+폼 양식에 이름을 붙이는 태그  
+for="누구" 누구를 위한 라벨인가? = inpitID  
+
+radio 버튼  
+```<input type="radio" name="같은 그룹" value="" id="">```  
+name 속성을 동일하게 넣어줘야 그룹된다.  
+value 속성 - 선택된 값은 구분
 
 ---
 공부 출처 - [김버그의 HTML&css는 재미있다.](https://edu.goorm.io/lecture/20583/%25EA%25B9%2580%25EB%25B2%2584%25EA%25B7%25B8%25EC%259D%2598-html-css%25EB%258A%2594-%25EC%259E%25AC%25EB%25B0%258C%25EB%258B%25A4)
