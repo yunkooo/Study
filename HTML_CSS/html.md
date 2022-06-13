@@ -25,7 +25,7 @@
 현위치에서 다른 위치로 이동  
 필수 href 속성 -hypertext reference(주소값)  
 1. 웹 url  
-2. 페이지내 이동  
+2. 페이지내 이동 (id로 이동 가능) 
 3. 상대경로, 절대경로  
 target 속성   
 target ="_blank" 새로운탭에서 열기  
