@@ -112,4 +112,94 @@ console.log(y); // 출력 : 2
 `변수 = (조건식) ? 참일때 값 : 거짓일때 값`
 
 
-자바스크립트함수는 매개변수와 인수의 개수가 일치하는지 확인하지 않음
+자바스크립트함수는 매개변수와 인수의 개수가 일치하는지 확인하지 않음]
+
+---
+### call by  
+* call by value  
+값에 의한 복사로 함수 내에서 매개변수 값을 변경 시켜도 영향이 미치지 않음  
+원시타입(primitive type)을 매개 변수로 넘겼을때 발생  
+```javascript
+let a = 1;
+let add = function (b) {b = b + 1; }; //callee
+add(a); //caller
+console.log(a); //출력 : 1
+```
+
+* call by reference  
+주소에 대한 복사로 함수 내에서 매개 변수 내 값을 변경 시키면 원본 데이터에도 영향을 받음  
+객체 타입(object type)을 매개변수로 넘겼을 때 발생
+```javascript
+var a = { v : 1};
+var add = function (b) {b.v = b.v + 1; }; //callee
+add(a); //caller
+console.log(a.v); //출력 : 2
+```
+---
+```js
+//함수 선언식
+function add_1(x,y){
+    return x+y;
+}
+// 함수 표현식
+const add_2 = function(x,y){
+    return x+y;
+}
+// 화살표 함수
+const add_3 = (x,y) => x+y;
+
+const add_4 = add_1;
+```
+
+---
+### method  
+객체에 저장된 값이 함수인 경우, 이를 메서드(method)라고 한다.
+
+this
+메서드에서 객체 내부의 속성(property) 값을 접근할수있는 지시자
+
+---
+### Number
+```js
+// 형변환
+let us = 1e-6;
+us.toString();
+String(us);
+(us+"");
+
+Number.parseInt("123.123");
+Number.parseFloat("123.123");
+
+```
+
+---
+### String
+
+```js
+// 문자열 검색
+let text = "hello, world!!!";
+
+console.log(text.indexOf("l")) //출력 : 2
+console.log(text.indexOf("l",3)) // 출력 : 3
+console.log(text.lastIndexOf("l",3)) // 출력 : 3
+
+console.log(text.includes("hello"));  //출력 : true
+console.log(text.startsWith("ello", 1))'
+console.log(text.endsWith("!!!"))';
+
+text.toUpperCase(); //대문자로 만들기
+text.toLowerCase(); //소문자로 만들기
+
+```
+
+* 문자열 치환  
+-처음만나는 요소는 문자열 치환 : String.replace(origin, change)  
+-정규표현식 활용 문자열 치환 : 치환 문자열에 정규 표현식 기입  
+ -> /치환문자열/g(전체)i(대소문자 구분 X)
+
+ * 문자열 추출  
+ -위치기반 문자열 추출 : String.slice(start,end), String.substring(start,end)  
+ -길이 기반 문자열 추출 : String.substr(start, length)
+
+ * 문자열 분할  
+ -배열로 문자열 분할 : String.split(Separator,limit)
