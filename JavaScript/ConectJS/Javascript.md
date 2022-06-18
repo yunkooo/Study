@@ -203,3 +203,101 @@ text.toLowerCase(); //소문자로 만들기
 
  * 문자열 분할  
  -배열로 문자열 분할 : String.split(Separator,limit)
+
+ ---
+
+ ### 배열
+ 여러 개체(Entity)값을 순차적으로 나열한 자료수조
+
+ 배열 크기 및 배열 여부 확인 : `Array.length`, `Array.isArray()`  
+ 배열 추가,삭제 : `Array.push()`, `Array.pop()`, `Array.shift()`,`Array.unshift()`, `Array.splice()`, `Array.slice()` 등  
+ 배열 탐색 : `Array.indexOf()`, `Array.lastIndexOf()`, `Array.includes()`  
+ 배열 변형(callback 미사용) : `Array.sort()`, `Array.reserve()`, `Array.join()`
+
+ * 자바스크립트에서 배열은 다른언어에서 말하는 일반적인 배열이 아닌 Hash기반의 객체
+ * 메모리가 연속적인 밀집배열(dense array)가 아닌 비연속적인 희소 배열(sparse array)  
+ 키값을 바탕으로 접근 할 수 있다.
+
+ ---
+ ### 고차함수
+
+ * sort( )
+ ```js
+ let ascending_order = function (x,y){
+    if (typeof x ==="string") x = x.toUpperCase();
+    return x > y ? 1 : -1;
+ }
+let descending_order = function (x,y){
+    if (typeof x ==="string") x = x.toUpperCase();
+    return x <> y ? 1 : -1;
+ }
+
+ let nums = [1 , -1, 4, 0, 10, 20, 12];
+ let fruits = ["apple", "Orange", "orange", "melon"];
+
+ console.log(nums.sort(ascending_order));
+ console.log(fruits.sort(ascending_order));
+
+ ```
+
+ * forEach( )
+```js
+nums.forEach(function(i){
+    console.log(i)
+})
+```
+ * map( )
+ ```js
+ let use_map = nums.map(function(item){
+    return item*2;
+ })
+ ```
+
+ * find( ) - 최초 발견되는 객체
+ * filter( ) - 조건에 맞는 모든객체
+ * reduce( )
+
+ ---
+ ### 생성자
+ 유사한 객체를 다중으로 만들때 사용되는 함수  
+ 일반적으로 생성자 함수의 첫 글자는 대문자로 시작  
+ 생성자 함수로 객체 생성 시 new 연산자를 통해 객체 생성
+
+ ---
+ ### Map
+다양한 자료형의 key를 허용, Key-value형태의 자료형을 저장 가능  
+값의 추가/삭제 시 메서드를 통해 수행이 필요함
+```js
+let map = new Map();
+
+map.set("name", "kim");
+map.get("name");
+map.size();
+map.clear();
+map.delete("name");
+
+map.set(123, 456).set(567, 890),set("name", "hong");
+```
+
+* Map <-> Object 변환  
+Object.entries(Object), Object.fromEntries(Map)
+
+
+---
+### Set  
+value만을 저장하며 `중복`을 허용하지 않는 collection  
+다양한 자료형을 value로 사용가능
+
+---
+### Math
+
+최대/최소  
+배열을 인수로 받아 최대/최소를 산출하려면 apply함수 혹은 스프레드 문법사용
+```js
+// 배열 그대로 넣으면 인자 값들이 values로 받아서 배열에 대한 처리를 해주어야함
+let nums = [1, -1, 5, 49, 23, 3, 33, 50];
+// apply
+Math.max.apply(null, nums);
+// spread
+Math.max(...nums);
+```
