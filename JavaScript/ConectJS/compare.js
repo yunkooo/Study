@@ -8,7 +8,7 @@ function answer(x, y) {
         result = "<";
     }
     else if (x == y) {
-        result="="
+        result="=";
     }
 
 
