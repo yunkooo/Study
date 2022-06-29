@@ -44,7 +44,7 @@ alt - alternative text 대체텍스트
 `<ol>` ordered list 순서가 중요한 리스트  
 `<ul>` unordered list 순서가 중요하지않은 리스트</br></br>
 `<li>` list item 리스트 항목  
-`<ul>`과 `<il>`의 자식 요소는 무조건 `<li>`만 가능
+`<ul>`과 `<ol>`의 자식 요소는 무조건 `<li>`만 가능
 - 정의 리스트 Description List  
 `<dl>`  
 용어를 정의할때 사용하는 정의 리스트  
@@ -142,18 +142,50 @@ loop 반복재생
 
 - iframe 태그  
 `<iframe>`
+---
+## 2022/06/29
 
+`<!DOCTYPE html>` - Documet type 
 
+```html
+<!DOCTYPE html>
 
+<html>
+    <head>
+        문서의 정보
+    </head>
+    <body>
+            <h1>제목</h1>
+            <p>문단</p>
+    </body>
+</html>
+```
 
+- title  
+`<title> 문서의 대제목</title>`  
+검색 최적화에 중요  
+페이지에 맞게 변경
 
+- link
 
+- style 태그  
+html 문서 내에 CSS코드를 작성할때 사용
 
+- script 태그  
+body 내에서 마지막에 작성 
 
+- meta 태그   
+`<meta name="" conetent="">`  
+viewport
 
+이동할때 버튼은 anchor 태그로 작성  
+이미지 `<img scr="" alt="">`  
+필요없는 사진은 css로 삽입 가능
 
+- Pagination
+페이지 버튼
 
-
+- WAI-ARIA
 
 
 
