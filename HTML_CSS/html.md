@@ -110,7 +110,7 @@ multiple 속성을 추가시 다수 선택 가능
 
 
 - 테이블  
-`<table></table` 테이블 만드는 태그  
+`<table></table>` 테이블 만드는 태그  
 `<thead>` 테이블 head  
 `<tbody>` 테이블 body  
 `<th>` 테이블 헤더  
