@@ -100,3 +100,22 @@ top - rigth - bottom - left
 
 >가상요소 ::before / ::after  
 content : " ";
+
+---
+## Position 
+붕 뜬다   
+`Type` 👉 기준점  
+
+- static  
+
+- relative  
+원래 자신의 위치를 기억
+- absolute  
+display : block 으로  변경  
+static이 아닌 요소를 기준으로 위치 선정
+
+- fixed  
+자신의 기준점이 `viewport`
+
+- z-index  
+우선순위
