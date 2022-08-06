@@ -119,3 +119,39 @@ static이 아닌 요소를 기준으로 위치 선정
 
 - z-index  
 우선순위
+
+---
+## flexbox
+
+```css
+.flexbox{
+    display: flex;
+    /* flex | inline-flex */
+    flex-direction: row;
+    /* 가로 방향 row | row-revers | 세로 방향 column | column-reverse */
+    flex-wrap: nowrap; 
+    /* nowrap | wrap */
+    justifiy-content: flex-start;
+    /* flex-end | center | space-between : 요소들 사이의 간격을 같게 | space-around */
+    align-items: center;
+    /* cross-access 방향으로 정렬 가능 
+    space-between | space-around 사용 불가
+    */
+    align-content: center
+    /* 사용시 flex-wrap: wrap 되어야한다.
+    space-between | space-around 사용 가능
+     */
+}
+```
+
+`display: flex` : 정렬 하고자 하는 요소를 감싸는 `부모`에게 작성
+
+
+`flex-wrap: nowrap` : 감싸지않고 자식의 사이즈를 줄여서라도 한 줄로 정렬한다.
+
+`flex-wrap: wrap` : 한줄에 모두 정렬하기에는 공간이 넉넉하지 않으면 여러 줄을 만들어 정렬한다.
+
+> 선 `align-items` | 후 `align-content`
+
+- order  
+order를 통해 요소들의 순서 설정 가능
